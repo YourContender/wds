@@ -1,0 +1,25 @@
+.button-universal {
+    max-width: 250px;
+    font-size: 22px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #0ff0b3, #00e0ff, #00c3ff);
+    color: #1b1b1b;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    font-family: "Orbitron", sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    transition: background-position 0.9s ease, transform 0.9s ease, box-shadow 0.9s ease, color 0.9s ease;
+    &:hover {
+        background-position: right center;
+        transform: scale(1.00); 
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 0 0 40px rgba(0, 255, 255, 0.3);
+    }
+
+    &:active {
+        transform: scale(0.98);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+}

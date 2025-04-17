@@ -1,0 +1,78 @@
+.main {
+    margin: 35px 0;
+    margin-bottom: 20px;
+    &_container {
+        min-height: 450px;
+        width: 1150px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &_titles {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        &-name {
+            color: #fff;
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-family: "Orbitron", sans-serif;
+            .letter {
+                color: #26e7f5;
+                font-family: "Orbitron", sans-serif;
+                font-size: 51px;
+                font-weight: 700;
+                border: none;
+                border-bottom: solid 1px #26e7f5;
+            }
+        }
+        span {
+            color: #fff;
+            font-family: "Orbitron", sans-serif;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        
+    }
+    &_image {
+        width: 400px; 
+        height: 400px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &-scroll {
+            img {
+                width: 100%; // или фиксированную ширину
+                height: auto;
+                border-radius: 100%;
+                animation: rotate-globe 35s linear infinite;
+                transform-origin: center center; // центр вращения
+            }
+        }
+        
+    }
+}
+  
+@keyframes rotate-globe {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}

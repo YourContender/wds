@@ -1,0 +1,27 @@
+.services {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 50px;
+    &_container {
+        width: 1200px;
+        margin: 10px auto;
+    }
+    &_list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &_title {
+        padding-left: 25px;
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #e0dede;
+            margin: 50px 0;
+            font-size: 30px;
+            letter-spacing: 1px;
+        }
+        .current {
+            border-bottom: 3px solid #26e7f5;
+        }
+    }
+}
+
