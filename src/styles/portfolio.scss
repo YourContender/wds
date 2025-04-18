@@ -1,0 +1,19 @@
+.portfolio {
+    width: 100%;
+    &_container {
+        width: 1150px;
+        margin: 0 auto;
+        &-title {
+            h1 {
+                font-family: 'Orbitron', sans-serif;
+                color: #e0dede;
+                margin: 30px 0;
+                font-size: 30px;
+                letter-spacing: 1px;
+            }
+            .current {
+                border-bottom: 3px solid #26e7f5;
+            }
+        }
+    }
+}

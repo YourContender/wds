@@ -14,14 +14,14 @@ export const ServiceCard = ({ number, title, descr, fullDescr }) => {
                     <h1 className="card-front-number">{number}</h1>
                     <h2>{title}</h2>
                     <span>{descr}</span>
-                    <Button text="more details" func={toggleFlip}/>
+                    {/* <Button text="more details" func={toggleFlip}/> */}
                 </div>
                 <div className="card-back">
                     <h2>{title}</h2>
                     <p>
                         {fullDescr}
                     </p>
-                    <Button text="back" func={toggleFlip}/>
+                    {/* <Button text="back" func={toggleFlip}/> */}
                 </div>
             </div>
         </div>

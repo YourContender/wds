@@ -1,0 +1,136 @@
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.custom-swiper {
+  width: 100%;
+}
+
+.custom-slide {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.5);
+  transform: scale(0.95);
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+
+.swiper-slide-active {
+  filter: brightness(1);
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0 0 20px rgba(238, 237, 237, 0.247);
+}
+
+// Стрелки
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  background: none; 
+  color: #13e4f3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.05);
+  padding: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.card-swiper {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 320px;
+  height: 450px;
+  user-select: none;
+  font-family: "Orbitron", sans-serif;
+}
+
+.logo {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  background: #ccc;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .custom-swiper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card-swiper  {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .custom-swiper {
+    padding: 0 10px;
+  }
+
+  .card-swiper  {
+    max-width: 220px;
+  }
+}
