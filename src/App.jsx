@@ -5,6 +5,7 @@ import { Services } from './layout/Services'
 import Stat from './layout/Stat'
 import { Portfolio } from './layout/Portfolio'
 import WhyUs from './layout/WhyUs'
+import { Footer } from './layout/Footer'
 
 export const App = () => {
     return (
@@ -13,8 +14,9 @@ export const App = () => {
             <Main/>
             <Services/>
             <Stat/>
-            <Portfolio/>
             <WhyUs/>
+            <Portfolio/>
+            <Footer/>
         </>
     )
 }
