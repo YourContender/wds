@@ -8,7 +8,7 @@ export const Services = () => {
         <section className="services">
             <div className="services_container">
                 <div className="services_title">
-                    <h1><span className="current">Our</span> advantages :</h1>
+                    <h1><span className="current">Our</span> services :</h1>
                 </div>
                 <div className="services_list">
                     {

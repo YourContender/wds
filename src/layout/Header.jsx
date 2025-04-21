@@ -14,7 +14,7 @@ export const Header = () => {
                     <div className="header_points-item">Contact</div>
                 </div>
                 <div className="header_btn">
-                    <Button text="sing in"/>
+                    <Button text="sign in"/>
                 </div>
             </div>
         </header>

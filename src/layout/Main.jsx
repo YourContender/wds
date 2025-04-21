@@ -19,11 +19,10 @@ export const Main = () => {
                         <span className='letter'>W</span>eb <span className='letter'>D</span>esign <span className='letter'>S</span>olution
                     </div>
                     <span>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta qui ut eveniet maiores consequuntur et, 
-                        porro modi ea deserunt suscipit. Quia molestiae velit sint cum doloremque sed. Cum, assumenda accusamus!
-                        Aliquid odit ipsam fugiat facere labore repellat
+                        We design and develop custom digital products and provide scalable tech teams for startups and enterprises.
+                        We work fast, communicate clearly, and focus on delivering real value.
                     </span>
-                    <Button text="more details"/>
+                    <Button text="Discuss your project"/>
                 </div>
                 
             </div>

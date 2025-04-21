@@ -1,0 +1,92 @@
+.why-us {
+    padding: 20px 20px;
+  
+    &__container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+  
+    &__title {
+        font-family: 'Orbitron', sans-serif;
+        color: #e0dede;
+        margin: 30px 0;
+        font-size: 30px;
+        letter-spacing: 1px;
+        
+    }
+    .current {
+        border-bottom: 3px solid #26e7f5;
+    }
+  }
+  
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+    &__item {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+  
+      &.active {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      }
+    }
+  
+    &__header {
+      width: 100%;
+      padding: 18px 24px;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      cursor: pointer;
+      transition: background 0.2s ease;
+      font-family: 'Orbitron', sans-serif;
+      
+  
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  
+    &__icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+    &__title {
+        font-size: 26px;
+        background: linear-gradient(90deg, rgb(17, 117, 218), #347f9c, #0ca87f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+  
+    &__content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 24px;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+  
+      p {
+        color: #444;
+        margin: 0;
+        padding: 16px 0;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+      }
+    }
+  
+    &__item.active .accordion__content {
+      max-height: 500px;
+      padding: 0 24px 16px;
+    }
+}
+  

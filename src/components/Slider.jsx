@@ -30,6 +30,7 @@ export const Slider = () => {
                                 <span key={i} className="tag">{tag}</span>
                             ))}
                         </div>
+                        <img className="card-image" src={item.img} alt="" />
                         <h2>{item.title}</h2>
                     </div>
                     </SwiperSlide>

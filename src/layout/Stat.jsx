@@ -25,7 +25,7 @@ export default function Stat() {
                             <CountUp
                                 start={0}
                                 end={item.value}
-                                duration={2}
+                                duration={4}
                                 suffix={item.suffix || ''}
                             />
                             ) : (

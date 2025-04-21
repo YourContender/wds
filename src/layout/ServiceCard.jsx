@@ -21,7 +21,7 @@ export const ServiceCard = ({ number, title, descr, fullDescr }) => {
                     <p>
                         {fullDescr}
                     </p>
-                    {/* <Button text="back" func={toggleFlip}/> */}
+                    <Button text="details"/>
                 </div>
             </div>
         </div>
